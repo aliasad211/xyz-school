@@ -43,8 +43,10 @@
 }
 
 html {
-  /* Colour shown during macOS/iOS overscroll "bounce" above the topbar and
-     below the footer. Navy matches both, so no white strip appears. */
+  /* Disable the native overscroll bounce so the page never slides away from
+     the top edge; PullToRefresh shows a loader instead. The navy background is
+     a fallback for older browsers that ignore overscroll-behavior. */
+  overscroll-behavior-y: none;
   background: var(--navy);
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
@@ -1002,6 +1004,36 @@ ul { margin: 0; padding: 0; list-style: none; }
 .back-to-top svg { transform: rotate(-90deg); }
 .back-to-top--visible { opacity: 1; visibility: visible; transform: translateY(0); }
 .back-to-top:hover { background: var(--gold-600); }
+
+/* Pull-to-refresh loader */
+.ptr {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 150;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--navy);
+  box-shadow: 0 8px 24px rgba(16, 35, 61, 0.25);
+  pointer-events: none;
+  transition: transform 0.3s var(--ease), opacity 0.3s, color 0.2s;
+}
+.ptr--dragging { transition: opacity 0.2s, color 0.2s; }
+.ptr--ready,
+.ptr--refreshing { color: var(--gold-600); }
+.ptr svg { width: 24px; height: 24px; }
+.ptr circle {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.15s;
+}
+.ptr--refreshing svg { animation: spin 0.8s linear infinite; }
 
 /* Not found */
 .not-found { min-height: 60vh; display: grid; place-items: center; text-align: center; padding: 80px 0; }

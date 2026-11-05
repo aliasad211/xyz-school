@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Poppins } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import PullToRefresh from "@/components/PullToRefresh";
 import ScrollEffects from "@/components/ScrollEffects";
 import { site } from "@/lib/data";
 import "./globals.css";
@@ -61,6 +62,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <main id="main">{children}</main>
         <Footer />
         <ScrollEffects />
+        <PullToRefresh />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </body>
     </html>
