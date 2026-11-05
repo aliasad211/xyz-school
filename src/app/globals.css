@@ -43,6 +43,9 @@
 }
 
 html {
+  /* Colour shown during macOS/iOS overscroll "bounce" above the topbar and
+     below the footer. Navy matches both, so no white strip appears. */
+  background: var(--navy);
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
