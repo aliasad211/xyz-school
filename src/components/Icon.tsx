@@ -1,0 +1,154 @@
+// Small inline SVG icon set (stroke icons, 24x24 grid).
+// Inline SVG avoids an icon-font download and inherits text colour via currentColor.
+
+const paths = {
+  menu: <path d="M3 6h18M3 12h18M3 18h18" />,
+  close: <path d="M18 6 6 18M6 6l12 12" />,
+  arrow: <path d="M5 12h14M13 5l7 7-7 7" />,
+  check: <path d="M20 6 9 17l-5-5" />,
+  chevron: <path d="m6 9 6 6 6-6" />,
+  phone: (
+    <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" />
+  ),
+  mail: (
+    <>
+      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <path d="m22 7-10 6L2 7" />
+    </>
+  ),
+  map: (
+    <>
+      <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+      <circle cx="12" cy="10" r="3" />
+    </>
+  ),
+  clock: (
+    <>
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 6v6l4 2" />
+    </>
+  ),
+  flask: <path d="M9 3h6M10 3v6L4.5 18.5A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-2.5L14 9V3M7 15h10" />,
+  book: (
+    <>
+      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+    </>
+  ),
+  monitor: (
+    <>
+      <rect x="2" y="3" width="20" height="14" rx="2" />
+      <path d="M8 21h8M12 17v4" />
+    </>
+  ),
+  trophy: (
+    <path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3" />
+  ),
+  palette: (
+    <>
+      <path d="M12 22a10 10 0 1 1 10-10c0 2.8-2.2 4-4 4h-2a2 2 0 0 0-1.5 3.3A2 2 0 0 1 12 22z" />
+      <circle cx="7.5" cy="10.5" r="1" />
+      <circle cx="12" cy="7" r="1" />
+      <circle cx="16.5" cy="10.5" r="1" />
+    </>
+  ),
+  bus: (
+    <>
+      <rect x="4" y="3" width="16" height="15" rx="2" />
+      <path d="M4 11h16M8 18v3M16 18v3" />
+      <circle cx="8" cy="14.5" r=".5" />
+      <circle cx="16" cy="14.5" r=".5" />
+    </>
+  ),
+  shield: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />,
+  heart: (
+    <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z" />
+  ),
+  star: <path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z" />,
+  award: (
+    <>
+      <circle cx="12" cy="8" r="6" />
+      <path d="M15.5 13 17 22l-5-3-5 3 1.5-9" />
+    </>
+  ),
+  target: (
+    <>
+      <circle cx="12" cy="12" r="10" />
+      <circle cx="12" cy="12" r="6" />
+      <circle cx="12" cy="12" r="2" />
+    </>
+  ),
+  eye: (
+    <>
+      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+      <circle cx="12" cy="12" r="3" />
+    </>
+  ),
+  users: (
+    <>
+      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+      <circle cx="9" cy="7" r="4" />
+      <path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8" />
+    </>
+  ),
+  cap: (
+    <>
+      <path d="M22 10 12 5 2 10l10 5 10-5z" />
+      <path d="M6 12v5c3 2 9 2 12 0v-5M22 10v6" />
+    </>
+  ),
+  file: (
+    <>
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+      <path d="M14 2v6h6M8 13h8M8 17h5" />
+    </>
+  ),
+  quote: (
+    <path d="M3 21c3 0 7-1 7-8V5H3v7h4c0 4-1 6-4 6zM14 21c3 0 7-1 7-8V5h-7v7h4c0 4-1 6-4 6z" />
+  ),
+  facebook: <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />,
+  instagram: (
+    <>
+      <rect x="2" y="2" width="20" height="20" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r=".5" />
+    </>
+  ),
+  youtube: (
+    <>
+      <path d="M22.5 6.4a2.8 2.8 0 0 0-2-2C18.9 4 12 4 12 4s-6.9 0-8.5.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 1 12a29 29 0 0 0 .5 5.6 2.8 2.8 0 0 0 2 2c1.6.4 8.5.4 8.5.4s6.9 0 8.5-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 23 12a29 29 0 0 0-.5-5.6z" />
+      <path d="m9.8 15.5 5.7-3.5-5.7-3.5z" />
+    </>
+  ),
+  linkedin: (
+    <>
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+      <circle cx="4" cy="4" r="2" />
+    </>
+  ),
+  send: <path d="M22 2 11 13M22 2l-7 20-4-9-9-4z" />,
+} as const;
+
+export type IconName = keyof typeof paths;
+
+type Props = { name: IconName; size?: number; className?: string };
+
+export default function Icon({ name, size = 24, className }: Props) {
+  return (
+    <svg
+      className={className}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.8}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      focusable="false"
+    >
+      {paths[name]}
+    </svg>
+  );
+}
