@@ -437,12 +437,32 @@ ul { margin: 0; padding: 0; list-style: none; }
 .page-hero p { max-width: 620px; margin: 0 auto 1.2rem; color: rgba(255, 255, 255, 0.82); font-size: 1.08rem; }
 .breadcrumb {
   display: inline-flex;
-  gap: 8px;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 0;
+  padding: 9px 20px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  font-family: var(--font-heading);
   font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  line-height: 1;
+  animation: fadeUp 0.8s var(--ease) 0.2s both;
 }
-.breadcrumb a:hover { color: var(--gold); }
-.breadcrumb [aria-current] { color: var(--gold); }
+.breadcrumb li { display: inline-flex; align-items: center; }
+.breadcrumb a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.78);
+  transition: color 0.2s;
+}
+.breadcrumb a:hover { color: var(--white); }
+.breadcrumb__sep { color: rgba(255, 255, 255, 0.4); }
+.breadcrumb [aria-current] { color: var(--gold); font-weight: 600; }
 
 /* 7. Cards --------------------------------------------------------------- */
 .card {

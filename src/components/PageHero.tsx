@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Icon from "./Icon";
 
 type Props = { title: string; text: string; image: string; crumb: string };
 
@@ -11,10 +12,18 @@ export default function PageHero({ title, text, image, crumb }: Props) {
       <div className="container">
         <h1>{title}</h1>
         <p>{text}</p>
-        <nav aria-label="Breadcrumb" className="breadcrumb">
-          <Link href="/">Home</Link>
-          <span aria-hidden="true">/</span>
-          <span aria-current="page">{crumb}</span>
+        <nav aria-label="Breadcrumb">
+          <ol className="breadcrumb">
+            <li>
+              <Link href="/">
+                <Icon name="home" size={16} /> Home
+              </Link>
+            </li>
+            <li className="breadcrumb__sep" aria-hidden="true">
+              <Icon name="chevronRight" size={14} />
+            </li>
+            <li aria-current="page">{crumb}</li>
+          </ol>
         </nav>
       </div>
     </section>
