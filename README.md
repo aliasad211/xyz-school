@@ -85,3 +85,8 @@ The site deploys to **Vercel** with no extra configuration: import the GitHub re
 
 - The form API routes validate the data and return a response. They do not store it. In production they would save the data to a database or send an email.
 - Photos are from [Unsplash](https://unsplash.com) (free licence). The school name, people and figures are fictional.
+
+## Links
+
+- Live site: https://xyz-school-navy.vercel.app
+- Repository: https://github.com/aliasad211/xyz-school

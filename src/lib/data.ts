@@ -6,7 +6,7 @@ import type { IconName } from "@/components/Icon";
 export const site = {
   name: "XYZ School",
   tagline: "Inspiring Minds, Building Futures",
-  url: "https://xyz-school.vercel.app",
+  url: "https://xyz-school-navy.vercel.app",
   description:
     "XYZ School offers quality education from Early Years to Senior Secondary with modern facilities, experienced faculty and a caring environment.",
   phone: "+92 300 1234567",
