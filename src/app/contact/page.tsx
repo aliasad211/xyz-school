@@ -8,7 +8,7 @@ import { site } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: `Contact XYZ School in Lahore. Call ${site.phone}, email ${site.email} or visit our campus.`,
+  description: `Contact XYZ School in Islamabad. Call ${site.phone}, email ${site.email} or visit our campus.`,
   alternates: { canonical: "/contact" },
 };
 
@@ -39,7 +39,7 @@ export default function ContactPage() {
           <iframe
             className="map-frame reveal"
             title="XYZ School location on Google Maps"
-            src="https://www.google.com/maps?q=Gulberg+III,+Lahore&output=embed"
+            src="https://www.google.com/maps?q=F-7+Markaz,+Islamabad&output=embed"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />

@@ -11,7 +11,7 @@ export const site = {
     "XYZ School offers quality education from Early Years to Senior Secondary with modern facilities, experienced faculty and a caring environment.",
   phone: "+92 300 1234567",
   email: "info@xyzschool.edu.pk",
-  address: "123 Education Avenue, Gulberg III, Lahore, Pakistan",
+  address: "123 Education Avenue, F-7 Markaz, Islamabad, Pakistan",
   hours: "Mon – Fri: 7:30 AM – 3:30 PM",
   founded: 1998,
 };
@@ -99,9 +99,9 @@ export const stats = [
 ];
 
 export const achievements = [
-  { icon: "trophy" as IconName, title: "Top Board Results", text: "12 students in the Lahore Board top-20 position list in 2025." },
+  { icon: "trophy" as IconName, title: "Top Board Results", text: "12 students in the Federal Board (FBISE) top-20 position list in 2025." },
   { icon: "star" as IconName, title: "National Science Olympiad", text: "Gold medal winners at the National Science Olympiad 2024." },
-  { icon: "award" as IconName, title: "Best School Award", text: "Recognised as Best Private School in Punjab, 2023." },
+  { icon: "award" as IconName, title: "Best School Award", text: "Recognised as Best Private School in Islamabad, 2023." },
 ];
 
 export const testimonials = [
@@ -143,7 +143,7 @@ export const milestones = [
   { year: "2005", text: "New campus with science and computer labs opened." },
   { year: "2012", text: "Senior Secondary wing and O/A Level stream launched." },
   { year: "2018", text: "Sports complex and digital library inaugurated." },
-  { year: "2023", text: "Awarded Best Private School in Punjab." },
+  { year: "2023", text: "Awarded Best Private School in Islamabad." },
 ];
 
 export const admissionSteps = [
@@ -179,5 +179,5 @@ export const faqs = [
   { q: "When do admissions open?", a: "Admissions for the new academic session open in January. Mid-year admissions are subject to seat availability." },
   { q: "Is there an entrance test?", a: "Yes, for Grade 1 onwards. Early Years admissions are based on a short informal interaction." },
   { q: "Do you offer sibling discounts?", a: "Yes, a 10% tuition discount is offered for the second child and 15% for the third." },
-  { q: "Is transport available?", a: "Yes, school buses cover most areas of Lahore. Transport fee depends on the route." },
+  { q: "Is transport available?", a: "Yes, school buses cover most sectors of Islamabad and Rawalpindi. Transport fee depends on the route." },
 ];

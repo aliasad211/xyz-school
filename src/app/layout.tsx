@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description: site.description,
-  keywords: ["XYZ School", "school in Lahore", "admissions", "Matric", "O Level", "primary school", "education"],
+  keywords: ["XYZ School", "school in Islamabad", "admissions", "Matric", "O Level", "primary school", "education"],
   openGraph: {
     type: "website",
     siteName: site.name,

@@ -43,7 +43,7 @@ export default function AboutSection({ showButton = true }: Props) {
           <span className="eyebrow">About Our School</span>
           <h2>A Place Where Every Child Learns, Grows &amp; Shines</h2>
           <p className="text-muted">
-            Founded in {site.founded}, XYZ School has grown into one of Lahore&rsquo;s most trusted
+            Founded in {site.founded}, XYZ School has grown into one of Islamabad&rsquo;s most trusted
             institutions. We believe education is more than textbooks — it is about curiosity,
             confidence and character.
           </p>

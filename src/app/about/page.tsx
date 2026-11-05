@@ -12,7 +12,7 @@ import { stagger } from "@/lib/stagger";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about XYZ School's history, mission, vision, values and leadership team. Serving students in Lahore since 1998.",
+    "Learn about XYZ School's history, mission, vision, values and leadership team. Serving students in Islamabad since 1998.",
   alternates: { canonical: "/about" },
 };
 
